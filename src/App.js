@@ -1,9 +1,9 @@
-import { Todo } from './components/Todo/Todo'
+import TodoList from './components/TodoList/TodoList'
 
 function App() {
   return (
     <h1 className="App">
-      <Todo taskTitle="NEW TODO" taskDescription="THIS IS A DEMONSTRATION" />
+      <TodoList />
     </h1>
   )
 }

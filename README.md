@@ -90,3 +90,39 @@ return (
 // Со мной работате - еще один репозиторий
 // Новая домашка - создаете новый проект новый репозиторйи и тд.
 // Решили сделать сами проект - новый репозиторий
+
+Пятница:
+// Рендеринг компонентов
+// импорты/экспорты
+
+// пропсы
+// useState
+// useEffect()
+
+// 1. Реализовать компонент с пропсами
+title. price, desc, category name, category image, images первую картинку
+{
+"id": 4,
+"title": "Handmade Fresh Table",
+"price": 687,
+"description": "Andy shoes are designed to keeping in...",
+"category": {
+"id": 5,
+"name": "Others",
+"image": "https://placeimg.com/640/480/any?r=0.591926261873231"
+},
+"images": [
+"https://placeimg.com/640/480/any?r=0.9178516507833767",
+"https://placeimg.com/640/480/any?r=0.9300320592588625",
+"https://placeimg.com/640/480/any?r=0.8807778235430017"
+]
+}
+
+// Создать компонент userList
+// импортировтаь в него массив users
+// импортировать компонент User
+// отрисовать данные
+// компонент userList мы импортируем в APP
+
+category.name
+category.image
