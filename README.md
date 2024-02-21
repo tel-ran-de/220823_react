@@ -12,7 +12,7 @@
    was not found in './components/AboutMe'
    export 'default' (imported as 'AboutMe1') was not found in './components/AboutMe' (possible exports: AboutMe1, AboutMe2)
 3. Неправильно указываете путь
-   Module not found: Error: You attempted to import ../components/AboutMe which falls outside of the project src/ directory.
+   Module not found: Error: You attempted to import ../components/AboutMe which falls outside of the project src/ directory
 
    ../ - выход из папки в родительскую
    ./ - в этой папке
@@ -62,3 +62,22 @@ State - состояние
 состояние - изменяемая часть компонента
 состояние меняется внутри компонента
 при изменении состоняния происходи ререндеринг компонента и его детей
+
+// props это объект
+export const Todo1 = (props) => {
+return (
+<div>
+<h1>{props.title}</h1>
+<p>{props.description}</p>
+</div>
+)
+}
+
+export const Todo2 = (props) => {
+const { title } = props
+return (
+<div>
+<h1>{title}</h1>
+</div>
+)
+}
