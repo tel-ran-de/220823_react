@@ -1,10 +1,11 @@
-export const Todo = ({ title, description }) => {
+export const Todo = ({ taskTitle, taskDescription }) => {
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
+    <div style={{}}>
+      <h1>{taskTitle}</h1>
+      <p>{taskDescription}</p>
     </div>
   )
 }
 
 // пропсы соответстовать названиям в объекте
+// key
