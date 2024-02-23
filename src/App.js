@@ -1,4 +1,5 @@
 import { Button } from './components/Button/Button'
+import CommentsList from './components/CommentsList/CommentsList'
 import Default from './components/DefaultExportButton/DefaultExportButton'
 import { Post } from './components/Post/Post'
 import TodoList from './components/TodoList/TodoList'
@@ -11,6 +12,7 @@ function App() {
   }
   return (
     <h1 className="App">
+      <CommentsList />
       {/* User({userName: "Michel"}) */}
       <User userName="Peter" />
       <User1 userName="Clark" />
