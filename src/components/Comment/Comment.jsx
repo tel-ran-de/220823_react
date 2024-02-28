@@ -1,30 +1,17 @@
 import { useState } from 'react'
+import styles from './comment.module.css'
 
 const Comment = ({ author, body, likes }) => {
-  const [marked, setMarked] = useState(true)
-  const [bgMarked, setbgMarked] = useState(false)
-  // bgMarked
-  // импортировать фук useState
-  // деструктурировать его marked setMarked
-  // initState false
-  // в зависимости от marked
-  // style - color: marked ?  orange  : green
-  // создать кнопку которая меняет состояние на противоположное
-
-  // создать новую и новое состояние и менять значение заднего фона
-  // красным либо фиолетовым
-  const style = {
-    color: marked ? 'orange' : 'green',
-    backgroundColor: bgMarked ? 'red' : 'violet',
-  }
+  const [isHidden, setIsHidden] = useState(false)
 
   return (
-    <div style={style} className="">
-      <h1>{author}</h1>
-      <p>{body}</p>
-      <p>{likes}</p>
-      <button onClick={() => setMarked(!marked)}>change color</button>
-      <button onClick={() => setbgMarked(!bgMarked)}>change background</button>
+    <div class={styles.container}>
+      <div className={isHidden ? styles.hide : styles.commentContainer}>
+        <h1>{author}</h1>
+        <p>{body}</p>
+        <p>{likes}</p>
+      </div>
+      <button onClick={() => setIsHidden(!isHidden)}>Toggle</button>
     </div>
   )
 }

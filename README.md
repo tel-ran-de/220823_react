@@ -202,3 +202,41 @@ useState(initialState)- при первом рендере можем перед
 2. создать класс commentContainer
 3. Добавить ширину, высоту и  border-radius
 4. импортировать этот файл в файл компонента и применить к самому вернему div
+
+import { useState } from 'react'
+
+const Comment = ({ author, body, likes }) => {
+const [marked, setMarked] = useState(true)
+const [bgMarked, setbgMarked] = useState(false)
+// bgMarked
+// импортировать фук useState
+// деструктурировать его marked setMarked
+// initState false
+// в зависимости от marked
+// style - color: marked ? orange : green
+// создать кнопку которая меняет состояние на противоположное
+
+// создать новую и новое состояние и менять значение заднего фона
+// красным либо фиолетовым
+const style = {
+color: marked ? 'orange' : 'green',
+backgroundColor: bgMarked ? 'red' : 'violet',
+}
+
+return (
+
+<div style={style} className="">
+<h1>{author}</h1>
+<p>{body}</p>
+<p>{likes}</p>
+<button onClick={() => setMarked(!marked)}>change color</button>
+<button onClick={() => setbgMarked(!bgMarked)}>change background</button>
+</div>
+)
+}
+
+export default Comment
+
+1. Создать состояние которое isHidden setIsHidden - булевое значение
+2. в зависимости от isHidden ? .commentContainer : .hide
+3. Сознать которая на клик будет сркывать и открывать пост
