@@ -13,10 +13,13 @@ const Comment = ({ author, body, likes }) => {
 
   // создать новую и новое состояние и менять значение заднего фона
   // красным либо фиолетовым
+  const style = {
+    color: marked ? 'orange' : 'green',
+    backgroundColor: bgMarked ? 'red' : 'violet',
+  }
+
   return (
-    <div
-      style={{ color: marked ? 'orange' : 'green', backgroundColor: bgMarked ? 'red' : 'violet' }}
-    >
+    <div style={style} className="">
       <h1>{author}</h1>
       <p>{body}</p>
       <p>{likes}</p>
