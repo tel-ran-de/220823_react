@@ -3,7 +3,7 @@
    Only one default export allowed per module
 3. Импортируем Дефолтный экспорт без фигурных скобок
 
-4. Именованный экспорт в фигурныйх скобках
+4. Именованный экспорт в фигурных скобках
 
    Ошибки при импорте
 
@@ -240,3 +240,5 @@ export default Comment
 1. Создать состояние которое isHidden setIsHidden - булевое значение
 2. в зависимости от isHidden ? .commentContainer : .hide
 3. Сознать которая на клик будет сркывать и открывать пост
+
+projectMamon-- > layout / pages / components / images

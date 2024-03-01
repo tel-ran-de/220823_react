@@ -1,0 +1,14 @@
+.contentContainer {
+  margin: 0 10%;
+}
+
+.contentContainer > button {
+  background: #5528ff;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  padding: 16px 58px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
