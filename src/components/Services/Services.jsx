@@ -1,9 +1,10 @@
 import layers from '../../images/layers.svg'
 import smartphone from '../../images/smartphone.svg'
+import styles from './Services.module.css'
 
 const Services = () => {
   return (
-    <div>
+    <div className={styles.servicesContainer}>
       <div>
         <img src={smartphone} alt="" />
         <div>
