@@ -1,28 +1,11 @@
-import { Button } from './components/Button/Button'
-import CommentsList from './components/CommentsList/CommentsList'
-import Default from './components/DefaultExportButton/DefaultExportButton'
-import { Post } from './components/Post/Post'
-import TodoList from './components/TodoList/TodoList'
-import User, { User1, User2 } from './components/User/User'
+import MainPage from './pages/MainPage'
 
+// импортировать компонент MainPAge и отобразить
 function App() {
-  const user = {
-    userName: 'Jack',
-    age: 29,
-  }
   return (
-    <h1 className="App">
-      <CommentsList />
-      {/* User({userName: "Michel"}) */}
-      <User userName="Peter" />
-      <User1 userName="Clark" />
-      {/* <User2 userName={user.userName} age={user.age} /> */}
-      <User2 {...user} />
-      <Default />
-      <Button />
-      <TodoList />
-      <Post />
-    </h1>
+    <div>
+      <MainPage />
+    </div>
   )
 }
 

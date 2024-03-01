@@ -1,0 +1,15 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+/* непосредственный/ прямой ребенок класса */
+.headerContainer > div {
+  display: flex;
+  align-items: center;
+}
+
+.headerContainer > nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
