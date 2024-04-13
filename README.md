@@ -242,3 +242,30 @@ export default Comment
 3. Сознать которая на клик будет сркывать и открывать пост
 
 projectMamon-- > layout / pages / components / images
+
+
+REDUX 
+
+
+const counterReducer = (state = 0, action) => {
+    switch (action.type) {
+        case 'INCREASE':
+            return state += 1;
+        case 'DECREASE':
+            return state -= 1;
+        case 'RESET':
+            return state = 0;
+        default: 
+        return state   
+    }
+}
+
+if (action.type === 'INCREASE') {
+    return state+=1
+} else if (action.type === 'DECREASE') {
+    return state -=1
+} else if (action.type === 'RESET'){
+  return state = 0
+} else {
+    return state
+}

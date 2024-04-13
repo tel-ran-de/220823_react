@@ -1,25 +1,19 @@
-// создать компонет Counter
-// импортируем хук useState из библиотеки react
+import { useDispatch, useSelector } from "react-redux"
+import { increase, decrease, reset, increase_by_amount } from "../../redux/actionCreators"
 
-import { useState } from 'react'
-
-// деструктурируем его на counter setCounter
 export const Counter = () => {
-  // счетчик увличивает или уменьшает число
-  // в круглых скобках могу указать первончальное значенеи initialState
-  const [counter, setCounter] = useState(0)
-  // counter - переменная в которой хранится значение
-  // setCounter - функция кот меняет наше значение
-
-  // мы не можем менять переменную counter напрямую
-  // setCounter это специальная функция!! кот меняет состояние и после изменения состояния
-  // происходит ререндеринг
-  // setCounter меняет значение counter на новое т.е. counter+1
-  const increase = () => setCounter(counter + 1)
+  // useSelector - принимает в себя колбек функции
+  const counter = useSelector(state => state.counter)
+  // useDispatch - отпраляет экшен в редьюсер 
+  // какой экшен отправляет в редьюсер --> редьюсер меняет состояние
+  const dispatch = useDispatch()
   return (
     <div>
       <p>{counter}</p>
-      <button onClick={increase}>Increase</button>
+      <button onClick={() => dispatch(increase())}>Increase</button>
+      <button onClick={() => dispatch(decrease())}>Decrease</button>
+      <button onClick={() => dispatch(reset())}>Reset</button>
+      <button onClick={() => dispatch(increase_by_amount(10))}>Add 10</button>
     </div>
   )
 }

@@ -1,10 +1,11 @@
-import MainPage from './pages/MainPage'
+import { Counter } from "./components/Counter/Counter"
+
 
 // импортировать компонент MainPAge и отобразить
 function App() {
   return (
     <div>
-      <MainPage />
+        <Counter/>
     </div>
   )
 }
