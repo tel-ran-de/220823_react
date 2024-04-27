@@ -6,7 +6,7 @@ import { DECREASE, INCREASE, RESET, INCREASE_BY_AMOUNT } from "./constants";
 // ВСЕГДА возращать состояние (либо измененное, либо нет)
 const initialState = { counter: 0 }
 
-export const counterReducer = (state = initialState, action) => {
+export const counterReducerRedux = (state = initialState, action) => {
     switch (action.type) {
         case INCREASE:
             return {
